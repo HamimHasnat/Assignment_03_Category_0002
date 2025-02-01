@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB11-2456</title>
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <section class=" max-w-screen-xl mx-auto px-16 lg:px-28 bg-gradient-to-b from-white/100 to-[#EFEBE3]/80 ">
+    <div class="navbar bg-base-100 border border-[#179800] lg:border-0">
+  <div class="navbar-start">
+    <img class="lg:hidden" src="c2-assets/sm_logo (1).png" alt="this logo will hidden when display large">
+    <img class=" hidden lg:inline-block" src="c2-assets/logo-header.png" alt="">
+    <!-- <a class="btn btn-ghost text-xl">daisyUI</a> -->
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1">
+      <li><a>Product</a></li>
+      <li><a>Services</a></li>
+      <li><a>Contact us</a></li>
+    </ul>
+  </div>
+  <div class="navbar-end ">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="green">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+        
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 p-2 shadow">
+            <li><a>Product</a></li>
+            <li><a>Services</a></li>
+            <li><a>Contact us</a></li>
+          </ul>
+        </div>
+      
+      <div class="hidden lg:flex items-center space-x-2 ">
+
+      <div class="relative btn btn-ghost">
+        <!-- Hidden Checkbox to Control Visibility using peer   -->
+        <input type="checkbox" id="toggleInput" class="peer hidden ">      
+        <label for="toggleInput" class="flex items-center gap-2 cursor-pointer ">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+            class="w-6 opacity-70 transition-transform duration-300 ease-in-out peer-checked:hidden">
+            <path fill-rule="evenodd"
+              d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+              clip-rule="evenodd" />
+          </svg>
+        </label>
+        <!-- checkbox will show when icon select, otherwise checkbox will hidden  -->
+        <input type="text" placeholder="Search..."
+          class="hidden peer-checked:block border border-gray-300 rounded-md px-2 py-1 focus:outline-none ">
+      </div>
+
+        <img  src="c2-assets/Group.png" alt="">
+        
+            <button id="Login" class=" btn btn-ghost w-28 h-9 justify-center text-center border-[#179800] rounded-[8px] text-black border ">Login</button>
+
+            <button id="Register"
+          class="btn btn-ghost bg-[#179800] w-32 h-10 justify-center text-center rounded-[8px] text-white ">Register</button>
+      </div>
+      
+          <!-- <a class="btn hidden lg:inline-block bg-[#179800] w-32 h-10 justify-center text-center" >Button</a> -->
+  </div>
+</div>
+
+
+<div class="flex flex-col justify-center items-center pt-10 ">
+<div class="">
+  <h1 class="text-5xl lg:text-7x text-center " >Freshness <span class="text-[#179800]">You Can <br>
+  Count</span> On,Prices <br> You’ll Love!</h1>
+  <br>
+  <p class="text-center ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+</div>
+<div>
+  <img class="w-full opacity-100" src="c2-assets/hero-vegetables.png" alt="">
+</div>
+
+</div>
+
+  </section>
+
+  <section class=" flex flex-col lg:flex-col max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 mt-28 ">
+
+    <h1 class="  text-green-700 text-3xl font-bold mb-6">Services</h1>
+
+           <div class="flex justify-center flex-col md:flex-row gap-6">
+
+            <div class="card bg-base-100 w-full md:w-1/2 shadow-xl bg-[#EFEBE3] p-6">
+              <figure class="px-10 pt-10 flex justify-center">
+                <div class="rounded-full bg-white w-[150px] h-[150px] flex justify-center items-center">
+                  <img src="c2-assets/service.png" />
+                </div>
+              </figure>
+              <div class="card-body items-center col-span-1 text-center">
+                <h2 class="card-title">24/7 Services</h2>
+                <p>twenty-four hours a day, seven days a week; all the time.</p>
+              </div>
+            </div>
+
+                <div class="card bg-base-100 w-full md:w-1/2 shadow-xl bg-[#EFEBE3] p-6">
+                  <figure class="px-10 pt-10 flex justify-center">
+                    <div class="rounded-full bg-white w-[150px] h-[150px] flex justify-center items-center">
+                      <img src="c2-assets/delivery.png " class="rounded-full" />
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Fast Delivery</h2>
+                    <p>Daily pickup,no limits·Cash on Delivery·Faster Payment Service·Online Management·Real-Time Tracking·24/7 Customer
+                      Service.</p>
+                  </div>
+                </div>
+
+                <div class="card bg-base-100 w-full md:w-1/2 shadow-xl bg-[#EFEBE3] p-6">
+                  <figure class="px-10 pt-10 flex justify-center">
+                    <div class="rounded-full bg-white w-[150px] h-[150px] flex justify-center items-center">
+                      <img src="c2-assets/healthy.png" class="rounded-full"/>
+                    </div>
+                  </figure>
+                  <div class="card-body items-center text-center">
+                    <h2 class="card-title">Healthy Products</h2>
+                    <p>Eating a wide variety of nutritious foods,including fruit,vegetables,nuts,seeds,and lean protein can help support your
+                    overall health.</p>
+                  </div>
+                </div>
+
+           </div>
+                      
+  </section>
+
+</body>
+</html>
