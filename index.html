@@ -9,6 +9,8 @@
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+  <!-- nav-section -->
   <section class=" max-w-screen-xl mx-auto px-16 lg:px-28 bg-gradient-to-b from-white/100 to-[#EFEBE3]/80 ">
     <div class="navbar bg-base-100 border border-[#179800] lg:border-0">
   <div class="navbar-start">
@@ -50,7 +52,10 @@
               d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
               clip-rule="evenodd" />
           </svg>
+          
         </label>
+
+        
         <!-- checkbox will show when icon select, otherwise checkbox will hidden  -->
         <input type="text" placeholder="Search..."
           class="hidden peer-checked:block border border-gray-300 rounded-md px-2 py-1 focus:outline-none ">
@@ -63,6 +68,8 @@
             <button id="Register"
           class="btn btn-ghost bg-[#179800] w-32 h-10 justify-center text-center rounded-[8px] text-white ">Register</button>
       </div>
+
+      
       
           <!-- <a class="btn hidden lg:inline-block bg-[#179800] w-32 h-10 justify-center text-center" >Button</a> -->
   </div>
@@ -71,7 +78,7 @@
 
 <div class="flex flex-col justify-center items-center pt-10 ">
 <div class="">
-  <h1 class="text-5xl lg:text-7x text-center " >Freshness <span class="text-[#179800]">You Can <br>
+  <h1 class="text-5xl lg:text-7x text-center font-bold " >Freshness <span class="text-[#179800]">You Can <br>
   Count</span> On,Prices <br> You’ll Love!</h1>
   <br>
   <p class="text-center ">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
@@ -83,8 +90,63 @@
 </div>
 
   </section>
+<marquee behavior="" direction="">To live and eat healthy, you can eat more fruits and vegetables, limit processed foods, and be active. You can also try to drink water instead of sugary drinks. </marquee>
+  <!-- Special Offers Section -->
+  <!--to create this section i took help from AI --> 
+<section class="max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 mt-28">
+  
+  <h1 class="text-3xl  text-green-700 font-bold mb-6 mt-16">Special Offers</h1>
 
-  <section class=" flex flex-col lg:flex-col max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 mt-28 ">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="relative h-60 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+
+      <div class="absolute inset-0 bg-[url('c2-assets/hero-vegetables.png')] bg-cover bg-center">
+
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+
+        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Limited Time Offer</span>
+
+        <h1 class="text-lg font-semibold mt-3">UP to 50% OFF</h1>
+      </div>
+    </div>
+
+    <div class="relative h-60 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+      <div class="absolute inset-0 bg-[url('c2-assets/dawat-mock-up.png')] bg-cover bg-center">
+      </div>
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Buy One Get One</span>
+
+        <h1 class="text-lg font-semibold mt-3">Limited Stock</h1>
+      </div>
+    </div>
+
+    <div class="relative h-60 shadow-md rounded-lg overflow-hidden hover:shadow-lg transition">
+      <div class="absolute inset-0 bg-[url('c2-assets/badam.jpg')] bg-cover bg-center"></div>
+      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-center text-white">
+        <span class="bg-white bg-opacity-20 px-4 py-2 rounded-md">Flash Sale</span>
+
+        <h1 class="text-lg font-semibold mt-3">UP to 70% OFF</h1>
+      </div>
+    </div>
+
+  </div>
+  <div class="flex justify-center mt-10">
+    <button class="px-6 py-3 rounded-md bg-green-600 text-white text-lg font-medium hover:bg-gray-700 transition">
+      Shop Now
+    </button>
+  </div>
+
+</section>
+
+<!-- service card section -->
+  <section class=" flex flex-col lg:flex-col max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 mt-28">
 
     <h1 class="  text-green-700 text-3xl font-bold mb-6">Services</h1>
 
@@ -132,5 +194,268 @@
                       
   </section>
 
+<!-- Popular Products section -->
+  <section class=" flex flex-col lg:flex-col max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 md:mt-28 bg-[#EFEBE3] mt-10 md:mb-28 pb-24 ">
+
+        <h1 class="  text-green-700 text-3xl font-bold mb-6 mt-16">Popular Products</h1>
+
+        <div class="flex justify-center flex-col md:flex-row gap-6 ">
+          <div>
+            <div class="card w-[424px] h-[302px] shadow-xl relative overflow-hidden ml-0
+            bg-gradient-to-r from-[#77B254] to-[#A8D08D]">
+            <div class="card-body flex flex-grow-0">
+              <h2 class="card-title">Card title!</h2>
+              <p>If a dog chews shoes whose shoes does he choose?</p>
+             <button class="btn w-40 mt-0">Buy Now</button>
+            </div>
+             <figure  class="absolute bottom-0 right-0 w-auto h-auto m-0 p-0 border-0">
+                <img src="c2-assets/vegetable-offer.png" alt="" class="w-56 h-56">
+             </figure>
+          </div>
+          </div>
+
+          <div class="grid lg:grid-cols-3 grid-cols-2 gap-4 ">
+
+            <div>
+          <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+          </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div class="">
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div>
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+            <div class="hidden md:block">
+            <section class="flex items-center bg-white w-[185px] h-[75px] rounded-xl gap-4 p-2 m-0">
+            <figure class="bg-[#EFEBE3] h-16 w-16 flex items-center justify-center rounded-md">
+                <img src="c2-assets/image 41.png" alt="">
+            </figure>
+            <div class="flex flex-col">
+                <div class="flex items-center gap-1">
+                    <img src="c2-assets/fi_2107957.png" alt="" class="w-4 h-4">
+                    <p>4.5</p>
+                </div>
+                <h4 class="text-sm font-semibold">Tomato 500 g</h4>
+                <p class="text-sm text-gray-600">$39.99</p>
+            </div>
+            </section>
+            </div>
+
+          </div>
+        </div>
+
+    
+  </section>
+  
+  <!-- Arrival & Offers -->
+   <section class=" flex flex-col lg:flex-col max-w-screen-xl mx-auto px-6 md:px-12 lg:px-28 md:mt-28 ">
+
+    <h1 class="  text-green-700 text-3xl font-bold mb-6 mt-8 md:mt-16">Arrival & Offers</h1>
+
+    <div class="flex justify-center flex-col md:flex-row gap-6">
+
+
+
+    <div class="card md:w-[600px] h-[244px] shadow-xl relative overflow-hidden ml-0 bg-[#115414]">
+        <img src="c2-assets/dawat-logo.png" alt="" class="w-[170px] ml-6 mt-4">
+        <div class="card-body flex flex-grow-0">
+          <div class="bg-[#63B76D] text-white px-4 py-2 rounded-md w-[165px] ">
+            <span >Cook Exotic Dishes</span>
+          </div>
+            <h1 class="card-title text-white ml-2 pt-3">UP to 20% OFF</h1>
+        </div>
+
+        <figure class="absolute bottom-0 right-0 w-auto h-auto m-0 p-0 border-0">
+            <img src="c2-assets/dawat-mock-up.png" alt="" class="w-56 h-56">
+        </figure>
+    </div>
+
+       <div class="card w-[400px] h-[244px] shadow-xl relative overflow-hidden bg-[#102861]">
+        <img src="c2-assets/india-gate-logo.png" alt="" class="w-20 ml-6 mt-2">
+        <div class="card-body flex flex-grow-0">
+          <div class="bg-[#2A4D97] text-white px-4 py-2 rounded-md w-[165px] ">
+            <span >Cook Exotic Dishes</span>
+          </div>
+            <h1 class="card-title text-white ml-2 pt-3">UP to 20% OFF</h1>
+        </div>
+
+        <figure class="absolute bottom-0 right-0 w-auto h-auto m-0 p-0 border-0">
+            <img src="c2-assets/india-gate-mock-up.png" alt="" class="w-32 h-48">
+        </figure>
+    </div>
+</div>
+
+   </section>
+
+<!-- Bucket Section -->
+<section class="relative flex flex-col md:flex-row rounded-lg shadow-lg max-w-[1020px] w-[358px] md:w-full mx-auto px-6 md:px-12 lg:px-28 mt-10 bg-[#EFEBE3] gap-6 z-20 top-[150px] ">
+  
+  <div class="flex justify-center">
+    <img src="c2-assets/vegetable-busket.png" class="w-full h-[248px] mt-20 mb-12 mr-28 ml-24" alt="">
+  </div>
+
+  <div class="flex flex-col justify-center gap-y-4 text-center md:text-left">
+    <h1 class="text-2xl font-bold text-green-500 md:text-black">
+      Get Grocery News!
+    </h1>
+    <p class="text-gray-700">Exclusive training tips, tricks, product deals, and more.</p>
+    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs mx-auto md:mx-0" />
+
+    <button type="submit" class="btn w-[164px] h-[45px] mx-auto md:mx-0">Subscribe</button>
+
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="relative bg-[#179800] text-white py-10 px-6 md:px-12 lg:px-28 min-h-[384px] z-0">
+  <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left p-32">
+    <div class="max-w-sm">
+      <img src="c2-assets/logo-footer.png" alt="Logo" class="w-40 mx-auto md:mx-0">
+      <p class="mt-4 text-gray-200">
+        Discover a world of treats, toys, and essentials handpicked for your furry friends.
+      </p>
+    </div>
+
+    <div>
+      <ul class="space-y-2">
+
+        <li><a href="#" class="hover:text-gray-300">Product</a></li>
+        <li><a href="#" class="hover:text-gray-300">Services</a></li>
+        <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <div class="flex flex-col items-center md:items-start">
+
+      <h5 class="text-lg font-semibold">Follow Us</h5>
+
+      <div class="flex gap-4 mt-2">
+
+        <img src="c2-assets/f.png" alt="Facebook" class="w-8 h-8 hover:opacity-80">
+        <img src="c2-assets/i.png" alt="Instagram" class="w-8 h-8 hover:opacity-80">
+
+        <img src="c2-assets/l.png" alt="LinkedIn" class="w-8 h-8 hover:opacity-80">
+
+        <img src="c2-assets/Mask group.png" alt="Other" class="w-8 h-8 hover:opacity-80">
+
+      </div>
+    </div>
+
+  </div>
+</footer>
 </body>
 </html>
